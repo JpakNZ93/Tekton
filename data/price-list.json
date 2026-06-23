@@ -1,0 +1,16 @@
+{
+  "currency": "GBP",
+  "items": {
+    "TUB-STD": { "description": "Standard tube", "unit": "each", "unit_cost": 12.5, "hireable": true },
+    "LED-210": { "description": "Ledger 2.1 m", "unit": "each", "unit_cost": 8.0, "hireable": true },
+    "TRN-120": { "description": "Transom 1.2 m", "unit": "each", "unit_cost": 6.5, "hireable": true },
+    "BD-225": { "description": "Board 2.25 m", "unit": "each", "unit_cost": 4.0, "hireable": false },
+    "CPL-STD": { "description": "Standard coupler", "unit": "each", "unit_cost": 2.5, "hireable": false },
+    "TIE-STD": { "description": "Tie", "unit": "each", "unit_cost": 3.0, "hireable": false },
+    "GRD-STD": { "description": "Guardrail", "unit": "each", "unit_cost": 15.0, "hireable": false },
+    "TOE-STD": { "description": "Toe board", "unit": "each", "unit_cost": 5.0, "hireable": false }
+  },
+  "labor": { "erect_rate_per_day": 850, "dismantle_factor": 0.6, "crew_size": 3, "lifts_per_day": 8 },
+  "charges": { "delivery_flat": 350, "default_margin_pct": 15 },
+  "hire": { "rate_per_week": 2400, "default_weeks": 8 }
+}

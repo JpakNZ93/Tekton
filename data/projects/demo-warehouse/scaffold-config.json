@@ -1,0 +1,9 @@
+{
+  "project_id": "demo-warehouse",
+  "system_id": "standard-tube-2.4",
+  "selected_faces": ["north", "east"],
+  "standoff_m": 0.3,
+  "extra_lift_m": 2.4,
+  "access_bay_every_n": 4,
+  "overrides": []
+}
