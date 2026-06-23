@@ -1,0 +1,123 @@
+{
+  "project_id": "demo-warehouse",
+  "generated_at": "2026-06-23T08:44:38.894Z",
+  "passed": true,
+  "critical_failures": 0,
+  "warning_failures": 0,
+  "checks": [
+    {
+      "id": "S01",
+      "severity": "critical",
+      "passed": true,
+      "message": "north: 829 scaffold components"
+    },
+    {
+      "id": "S01",
+      "severity": "critical",
+      "passed": true,
+      "message": "east: 502 scaffold components"
+    },
+    {
+      "id": "S02",
+      "severity": "critical",
+      "passed": true,
+      "message": "north lift 0: guardrail present"
+    },
+    {
+      "id": "S02",
+      "severity": "critical",
+      "passed": true,
+      "message": "north lift 1: guardrail present"
+    },
+    {
+      "id": "S02",
+      "severity": "critical",
+      "passed": true,
+      "message": "north lift 2: guardrail present"
+    },
+    {
+      "id": "S02",
+      "severity": "critical",
+      "passed": true,
+      "message": "north lift 3: guardrail present"
+    },
+    {
+      "id": "S02",
+      "severity": "critical",
+      "passed": true,
+      "message": "north lift 4: guardrail present"
+    },
+    {
+      "id": "S02",
+      "severity": "critical",
+      "passed": true,
+      "message": "east lift 0: guardrail present"
+    },
+    {
+      "id": "S02",
+      "severity": "critical",
+      "passed": true,
+      "message": "east lift 1: guardrail present"
+    },
+    {
+      "id": "S02",
+      "severity": "critical",
+      "passed": true,
+      "message": "east lift 2: guardrail present"
+    },
+    {
+      "id": "S02",
+      "severity": "critical",
+      "passed": true,
+      "message": "east lift 3: guardrail present"
+    },
+    {
+      "id": "S02",
+      "severity": "critical",
+      "passed": true,
+      "message": "east lift 4: guardrail present"
+    },
+    {
+      "id": "S03",
+      "severity": "warning",
+      "passed": true,
+      "message": "north: 30 ties (minimum 20)"
+    },
+    {
+      "id": "S03",
+      "severity": "warning",
+      "passed": true,
+      "message": "east: 18 ties (minimum 12)"
+    },
+    {
+      "id": "S04",
+      "severity": "critical",
+      "passed": true,
+      "message": "No scaffold components inside no-scaffold zones"
+    },
+    {
+      "id": "S05",
+      "severity": "critical",
+      "passed": true,
+      "message": "All billable scaffold components have stock_code"
+    },
+    {
+      "id": "S06",
+      "severity": "critical",
+      "passed": true,
+      "message": "BOM quantities match scaffold-spec group counts"
+    },
+    {
+      "id": "S07",
+      "severity": "warning",
+      "passed": true,
+      "message": "north: 2 access markers (10 bays)"
+    },
+    {
+      "id": "S07",
+      "severity": "warning",
+      "passed": true,
+      "message": "east: 1 access markers (6 bays)"
+    }
+  ]
+}
