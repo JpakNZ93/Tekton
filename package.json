@@ -19,7 +19,8 @@
     "demo:restore": "node scripts/demo.mjs restore",
     "dev": "next dev",
     "build": "node scripts/derive.mjs --building notre-dame && node scripts/verify.mjs --building notre-dame && next build",
-    "start": "next start"
+    "start": "next start",
+    "test:scaffold": "node --test tests/scaffold/*.test.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.0.0",
