@@ -19,7 +19,9 @@
     "demo:restore": "node scripts/demo.mjs restore",
     "dev": "next dev",
     "build": "node scripts/derive.mjs --building notre-dame && node scripts/verify.mjs --building notre-dame && next build",
-    "start": "next start"
+    "start": "next start",
+    "project:derive": "node scripts/orchestrate-project.mjs --project demo-warehouse",
+    "test:scaffold": "node --test tests/scaffold/*.test.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.0.0",
@@ -28,6 +30,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "three": "^0.172.0",
+    "zod": "^4.4.3",
     "zustand": "^5.0.0"
   },
   "devDependencies": {

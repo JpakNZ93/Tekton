@@ -188,12 +188,37 @@ Because `build` runs `derive`, `add-annotations`, `verify`, and `next build`, a 
 - Procedural geometry generated from `artifacts/structural-spec.json`.
 - Static JSON artifacts for data, derivation logs, verification reports, and playback states.
 
+## Scaffold Quoter (Phase 1 MVP)
+
+File-based scaffolding estimation built on the Tekton evidence pipeline: ingest site dimensions, derive a 3D building massing model, wrap scaffold geometry from system rules, and export a defensible bill of materials and quote — with every assumption labeled.
+
+**Routes**
+
+- [`/projects`](app/projects/page.tsx) — project dashboard
+- [`/projects/demo-warehouse`](app/projects/[id]/layout.tsx) — demo workspace (ingest, building, scaffold, quote)
+
+**Commands**
+
+```bash
+npm run project:derive   # run building + scaffold pipeline on demo-warehouse
+npm run test:scaffold    # unit tests for derive/verify scripts
+```
+
+**Docs**
+
+- [PRD: Scaffold Quoter](docs/PRD-SCAFFOLD-QUOTER.md)
+- [Design spec](docs/superpowers/specs/2026-06-23-scaffold-quoter-design.md)
+
 ## Repository Map
 
 - [`app/`](app): Next.js app entry.
+- [`app/projects/`](app/projects): Scaffold Quoter project dashboard and per-project workspace routes.
 - [`components/`](components): 3D viewer, playback controls, click handling, annotation UI.
+- [`components/scaffold/`](components/scaffold): scaffold overlay viewer and designer UI.
 - [`data/nanchan-canonical.json`](data/nanchan-canonical.json): sourced architectural corpus.
+- [`data/projects/`](data/projects): per-project canonical inputs (e.g. `demo-warehouse/scaffold-config.json`).
 - [`scripts/derive.mjs`](scripts/derive.mjs): deterministic rule engine.
+- [`scripts/derive-building.mjs`](scripts/derive-building.mjs): building massing derivation for scaffold projects.
 - [`scripts/verify.mjs`](scripts/verify.mjs): geometry and pixel verifier.
 - [`scripts/add-annotations.mjs`](scripts/add-annotations.mjs): annotation enrichment pass.
 - [`scripts/demo.mjs`](scripts/demo.mjs): corruption/restore demo for verifier gating.

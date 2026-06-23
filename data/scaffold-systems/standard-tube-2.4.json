@@ -1,0 +1,29 @@
+{
+  "id": "standard-tube-2.4",
+  "name": "Standard tube & fitting (2.4 m lifts)",
+  "standards": ["BS EN 12811", "TG20:21"],
+  "components": {
+    "standard_length_m": [2.4, 3.0, 1.8],
+    "ledger_spacing_m": 2.1,
+    "transom_spacing_m": 1.2,
+    "board_width_m": 0.225,
+    "tube_diameter_m": 0.0483
+  },
+  "rules": {
+    "max_lift_height_m": 2.4,
+    "tie_spacing_vertical_lifts": 2,
+    "guardrail_required": true,
+    "toe_board_required": true,
+    "couplers_per_joint": 2
+  },
+  "stock_codes": {
+    "tube": "TUB-STD",
+    "ledger": "LED-210",
+    "transom": "TRN-120",
+    "board": "BD-225",
+    "coupler": "CPL-STD",
+    "tie": "TIE-STD",
+    "guardrail": "GRD-STD",
+    "toe_board": "TOE-STD"
+  }
+}
