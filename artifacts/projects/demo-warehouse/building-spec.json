@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "project_id": "demo-warehouse",
+    "generated_by": "scripts/derive-building.mjs"
+  },
+  "units": {
+    "length": "m"
+  },
+  "phases": [
+    "footprint",
+    "faces"
+  ],
+  "key_dimensions": {
+    "width_m": 20,
+    "depth_m": 12,
+    "face_count": 4
+  },
+  "provenance_colors": {
+    "surveyed": "#3d9e5a",
+    "derived": "#c9a227",
+    "assumed": "#c94a4a"
+  },
+  "components": [
+    {
+      "id": "footprint-slab",
+      "name_en": "Footprint slab",
+      "phase": "footprint",
+      "category": "building-slab",
+      "geometry": {
+        "type": "box",
+        "w": 20,
+        "h": 0.15,
+        "d": 12
+      },
+      "position": [
+        0,
+        -0.075,
+        0
+      ],
+      "provenance": "assumed",
+      "source": "visual",
+      "material": "concrete"
+    },
+    {
+      "id": "face-north",
+      "name_en": "north elevation",
+      "phase": "faces",
+      "category": "building-face",
+      "geometry": {
+        "type": "box",
+        "w": 20,
+        "h": 8,
+        "d": 0.2
+      },
+      "position": [
+        0,
+        4,
+        6
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "provenance": "surveyed",
+      "source": "manual",
+      "face_id": "north"
+    },
+    {
+      "id": "face-south",
+      "name_en": "south elevation",
+      "phase": "faces",
+      "category": "building-face",
+      "geometry": {
+        "type": "box",
+        "w": 20,
+        "h": 8,
+        "d": 0.2
+      },
+      "position": [
+        7.347880794884119e-16,
+        4,
+        -6
+      ],
+      "rotation_deg": [
+        0,
+        180,
+        0
+      ],
+      "provenance": "surveyed",
+      "source": "manual",
+      "face_id": "south"
+    },
+    {
+      "id": "face-east",
+      "name_en": "east elevation",
+      "phase": "faces",
+      "category": "building-face",
+      "geometry": {
+        "type": "box",
+        "w": 12,
+        "h": 8,
+        "d": 0.2
+      },
+      "position": [
+        10,
+        4,
+        6.123233995736766e-16
+      ],
+      "rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "provenance": "surveyed",
+      "source": "manual",
+      "face_id": "east"
+    },
+    {
+      "id": "face-west",
+      "name_en": "west elevation",
+      "phase": "faces",
+      "category": "building-face",
+      "geometry": {
+        "type": "box",
+        "w": 12,
+        "h": 8,
+        "d": 0.2
+      },
+      "position": [
+        -10,
+        4,
+        -1.8369701987210296e-15
+      ],
+      "rotation_deg": [
+        0,
+        270,
+        0
+      ],
+      "provenance": "surveyed",
+      "source": "manual",
+      "face_id": "west"
+    }
+  ]
+}
