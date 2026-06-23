@@ -20,6 +20,7 @@
     "dev": "next dev",
     "build": "node scripts/derive.mjs --building notre-dame && node scripts/verify.mjs --building notre-dame && next build",
     "start": "next start",
+    "project:derive": "node scripts/orchestrate-project.mjs --project demo-warehouse",
     "test:scaffold": "node --test tests/scaffold/*.test.mjs"
   },
   "dependencies": {
