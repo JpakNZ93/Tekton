@@ -1,0 +1,25 @@
+{
+  "currency": "AUD",
+  "items": {
+    "MOD-STD-240": { "description": "Standard bay frame 2.0 × 2.4 m", "unit_cost": 85.0, "hireable": true },
+    "MOD-ACC-240": { "description": "Access bay 2.0 × 2.4 m", "unit_cost": 120.0, "hireable": true },
+    "MOD-CRN-200": { "description": "Corner module 2.0 m", "unit_cost": 95.0, "hireable": true },
+    "MOD-HOP-100": { "description": "Hop-up narrow bay", "unit_cost": 65.0, "hireable": true },
+    "MOD-TIE": { "description": "Tie kit", "unit_cost": 18.0, "hireable": false },
+    "MOD-GRD": { "description": "Guardrail set per lift", "unit_cost": 45.0, "hireable": true }
+  },
+  "labor": {
+    "crew_size": 3,
+    "rate_per_day": 850,
+    "dismantle_factor": 0.6,
+    "days_per_module": 0.08
+  },
+  "hire": {
+    "weeks_default": 8,
+    "rate_per_week": 2400
+  },
+  "charges": {
+    "delivery": 350,
+    "margin_percent": 15
+  }
+}

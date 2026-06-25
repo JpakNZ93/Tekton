@@ -8,6 +8,7 @@
  *   nanchan               → Viewer (Holly's Nanchan — the regression anchor)
  */
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import BrandMark from "./BrandMark";
 
@@ -75,6 +76,24 @@ export default function BuildingRouter() {
           );
         })}
       </div>
+      <Link
+        href="/quoter"
+        style={{
+          position: "fixed",
+          top: 14,
+          right: 16,
+          zIndex: 100,
+          fontFamily: "system-ui, sans-serif",
+          fontSize: 12,
+          color: "#3d9970",
+          textDecoration: "none",
+          background: "#1c1d20cc",
+          padding: "8px 14px",
+          border: "1px solid #4a4640",
+        }}
+      >
+        Scaffold Quoter →
+      </Link>
       <Active key={building} />
     </>
   );

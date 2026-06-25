@@ -1,6 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "buildCommand": "next build",
-  "outputDirectory": "out"
+  "buildCommand": "node scripts/orchestrate-project.mjs demo-warehouse && next build",
+  "outputDirectory": "out",
+  "rewrites": [
+    { "source": "/quoter", "destination": "/quoter.html" }
+  ]
 }

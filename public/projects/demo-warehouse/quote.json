@@ -1,0 +1,120 @@
+{
+  "project_id": "demo-warehouse",
+  "scaffold_system": "aus-modular-2.0x2.4",
+  "bom": [
+    {
+      "stock_code": "MOD-STD-240",
+      "description": "Standard bay frame 2.0 × 2.4 m",
+      "qty": 20,
+      "unit": "each",
+      "unit_cost": 85,
+      "line_total": 1700,
+      "derivation": "scaffold-spec:modules:MOD-STD-240"
+    },
+    {
+      "stock_code": "MOD-ACC-240",
+      "description": "Access bay 2.0 × 2.4 m",
+      "qty": 10,
+      "unit": "each",
+      "unit_cost": 120,
+      "line_total": 1200,
+      "derivation": "scaffold-spec:modules:MOD-ACC-240"
+    },
+    {
+      "stock_code": "MOD-TIE",
+      "description": "Tie kit",
+      "qty": 6,
+      "unit": "each",
+      "unit_cost": 18,
+      "line_total": 108,
+      "derivation": "scaffold-spec:modules:MOD-TIE"
+    },
+    {
+      "stock_code": "MOD-GRD",
+      "description": "Guardrail set per lift",
+      "qty": 3,
+      "unit": "each",
+      "unit_cost": 45,
+      "line_total": 135,
+      "derivation": "scaffold-spec:modules:MOD-GRD"
+    },
+    {
+      "stock_code": "MOD-HOP-100",
+      "description": "Hop-up narrow bay",
+      "qty": 35,
+      "unit": "each",
+      "unit_cost": 65,
+      "line_total": 2275,
+      "derivation": "scaffold-spec:modules:MOD-HOP-100"
+    },
+    {
+      "stock_code": "MOD-CRN-200",
+      "description": "Corner module 2.0 m",
+      "qty": 1,
+      "unit": "each",
+      "unit_cost": 95,
+      "line_total": 95,
+      "derivation": "scaffold-spec:modules:MOD-CRN-200"
+    }
+  ],
+  "labor": [
+    {
+      "task": "erect",
+      "crew": 3,
+      "days": 5.28,
+      "rate_per_day": 850,
+      "line_total": 13464,
+      "rule": "66 modules × 0.08 days/module × 3 crew @ $850/day"
+    },
+    {
+      "task": "dismantle",
+      "crew": 3,
+      "days": 3.17,
+      "rate_per_day": 850,
+      "line_total": 8083.5,
+      "rule": "erect × 0.6"
+    }
+  ],
+  "hire": {
+    "weeks": 8,
+    "rate_per_week": 2400,
+    "line_total": 19200,
+    "hireable_codes": [
+      "MOD-STD-240",
+      "MOD-ACC-240",
+      "MOD-CRN-200",
+      "MOD-HOP-100",
+      "MOD-GRD"
+    ]
+  },
+  "charges": [
+    {
+      "type": "delivery",
+      "amount": 350
+    },
+    {
+      "type": "margin",
+      "percent": 15,
+      "applied_to": "subtotal"
+    }
+  ],
+  "totals": {
+    "materials": 5513,
+    "labor": 21547.5,
+    "hire": 19200,
+    "charges": 350,
+    "subtotal": 46610.5,
+    "margin": 6991.58,
+    "grand_total": 53602.08
+  },
+  "confidence": {
+    "surveyed_pct": 0.75,
+    "derived_pct": 0,
+    "assumed_pct": 0.25
+  },
+  "assumptions": [
+    "South elevation height 6.5 m assumed — not site measured.",
+    "Access required mid-run on east elevation",
+    "Access bay every 5 bays per AUS deemed-to-conform default."
+  ]
+}

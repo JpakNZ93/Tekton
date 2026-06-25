@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-13T22:43:04.876Z",
+  "generated_at": "2026-06-25T08:31:55.752Z",
   "building": "notre-dame",
   "spec": "artifacts/structural-spec.notre-dame.json",
   "screenshot_refresh": {
     "refreshed": false,
-    "note": "screenshot failed; grading existing PNGs"
+    "note": "viewer not reachable at http://localhost:3003; grading existing PNGs"
   },
   "summary": {
     "total": 13,

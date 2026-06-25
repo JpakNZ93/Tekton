@@ -1,0 +1,4 @@
+face_id,width_m,height_m,bearing_deg,provenance
+north,12.0,6.5,0,surveyed
+east,8.0,6.5,90,surveyed
+west,8.0,6.5,270,surveyed

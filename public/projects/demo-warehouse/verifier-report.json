@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "id": "V01",
+      "name": "Face north has scaffold modules",
+      "pass": true,
+      "severity": "blocking"
+    },
+    {
+      "id": "V01",
+      "name": "Face east has scaffold modules",
+      "pass": true,
+      "severity": "blocking"
+    },
+    {
+      "id": "V01",
+      "name": "Face west has scaffold modules",
+      "pass": true,
+      "severity": "blocking"
+    },
+    {
+      "id": "V02",
+      "name": "Tie spacing within 4 m vertical limit",
+      "pass": true,
+      "severity": "blocking"
+    },
+    {
+      "id": "V03",
+      "name": "Guardrails on working lifts",
+      "pass": true,
+      "severity": "blocking"
+    },
+    {
+      "id": "V04",
+      "name": "Access bay present when scaffold spans multiple bays",
+      "pass": true,
+      "severity": "warning"
+    },
+    {
+      "id": "V05",
+      "name": "No modules in no-scaffold zones",
+      "pass": true,
+      "severity": "blocking"
+    },
+    {
+      "id": "V06",
+      "name": "All modules have stock codes",
+      "pass": true,
+      "severity": "blocking"
+    },
+    {
+      "id": "V07",
+      "name": "Stock code mapping complete",
+      "pass": true,
+      "severity": "blocking"
+    },
+    {
+      "id": "V08",
+      "name": "Bay widths within AUS limits (≤ 2.4 m)",
+      "pass": true,
+      "severity": "blocking"
+    },
+    {
+      "id": "V09",
+      "name": "Total height within 30 m deemed-to-conform scope",
+      "pass": true,
+      "severity": "warning"
+    }
+  ],
+  "bomCounts": {
+    "MOD-STD-240": 20,
+    "MOD-ACC-240": 10,
+    "MOD-TIE": 6,
+    "MOD-GRD": 3,
+    "MOD-HOP-100": 35,
+    "MOD-CRN-200": 1
+  }
+}
