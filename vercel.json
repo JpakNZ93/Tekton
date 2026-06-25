@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "buildCommand": "next build",
+  "buildCommand": "node scripts/orchestrate-project.mjs demo-warehouse && next build",
   "outputDirectory": "out"
 }
