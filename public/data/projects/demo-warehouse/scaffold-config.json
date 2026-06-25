@@ -1,0 +1,21 @@
+{
+  "system_id": "aus-modular-2.0x2.4",
+  "selected_faces": ["north", "east", "west"],
+  "standoff_m": 0.3,
+  "working_lift_extra_m": 2.0,
+  "auto_wrap": {
+    "enabled": true,
+    "access_bay_every_n": 5,
+    "corner_modules": true
+  },
+  "overrides": [
+    {
+      "face_id": "east",
+      "bay_index": 2,
+      "action": "replace",
+      "module": "MOD-ACC-2.0x2.4",
+      "reason": "Access required mid-run on east elevation"
+    }
+  ],
+  "no_scaffold_zones": []
+}

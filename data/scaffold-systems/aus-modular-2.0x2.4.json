@@ -1,0 +1,73 @@
+{
+  "id": "aus-modular-2.0x2.4",
+  "name": "AUS Modular Tube & Fitting (2.0 m lifts)",
+  "standards": ["AS/NZS 1576.1", "AS/NZS 1576.6"],
+  "geometry": {
+    "lift_height_m": 2.0,
+    "max_bay_length_m": 2.4,
+    "min_bay_length_m": 1.8,
+    "bay_width_m": 0.87,
+    "tube_od_mm": 48.3,
+    "standoff_default_m": 0.3
+  },
+  "rules": {
+    "tie_spacing_vertical_m": 4.0,
+    "tie_spacing_horizontal_m": 4.0,
+    "guardrail_required": true,
+    "toe_board_required": true,
+    "access_bay_every_n": 5,
+    "max_height_deemed_to_conform_m": 30.0
+  },
+  "modules": {
+    "MOD-STD-2.0x2.4": {
+      "description": "Standard bay frame 2.0 × 2.4 m",
+      "lift_m": 2.0,
+      "width_m": 2.4,
+      "detail_template": "standard-bay-tube-coupler"
+    },
+    "MOD-ACC-2.0x2.4": {
+      "description": "Access bay (ladder frame) 2.0 × 2.4 m",
+      "lift_m": 2.0,
+      "width_m": 2.4,
+      "detail_template": "access-bay-tube-coupler"
+    },
+    "MOD-CRN-2.0": {
+      "description": "Corner module 2.0 m lift",
+      "lift_m": 2.0,
+      "width_m": 0.87,
+      "detail_template": "corner-bay-tube-coupler"
+    },
+    "MOD-HOP-1.0": {
+      "description": "Hop-up narrow bay",
+      "lift_m": 2.0,
+      "width_m": 1.0,
+      "detail_template": "hopup-bay-tube-coupler"
+    },
+    "MOD-TIE-KIT": {
+      "description": "Tie kit per tie point",
+      "lift_m": 0,
+      "width_m": 0,
+      "detail_template": "tie-kit"
+    },
+    "MOD-GRD-LIFT": {
+      "description": "Guardrail set per working lift",
+      "lift_m": 0,
+      "width_m": 0,
+      "detail_template": "guardrail-set"
+    }
+  },
+  "stock_codes": {
+    "MOD-STD-2.0x2.4": "MOD-STD-240",
+    "MOD-ACC-2.0x2.4": "MOD-ACC-240",
+    "MOD-CRN-2.0": "MOD-CRN-200",
+    "MOD-HOP-1.0": "MOD-HOP-100",
+    "MOD-TIE-KIT": "MOD-TIE",
+    "MOD-GRD-LIFT": "MOD-GRD"
+  },
+  "labor": {
+    "days_per_module": 0.08,
+    "crew_size": 3,
+    "rate_per_day": 850,
+    "dismantle_factor": 0.6
+  }
+}

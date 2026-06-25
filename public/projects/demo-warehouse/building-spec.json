@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "project_id": "demo-warehouse",
+    "generated_by": "derive-building.mjs",
+    "canonical_source": "data/projects/demo-warehouse/building-canonical.json"
+  },
+  "units": {
+    "scene_scale": 1,
+    "unit": "m"
+  },
+  "provenance_colors": {
+    "surveyed": "#3d9970",
+    "derived": "#d4a017",
+    "assumed": "#c0392b",
+    "rule_derived": "#5e6ca8"
+  },
+  "phases": [
+    "footprint",
+    "faces"
+  ],
+  "components": [
+    {
+      "id": "footprint-slab",
+      "name_en": "Footprint slab",
+      "phase": "footprint",
+      "category": "massing",
+      "role": "Ground plane reference",
+      "geometry": {
+        "type": "box",
+        "w": 12,
+        "h": 0.2,
+        "d": 8
+      },
+      "position": [
+        6,
+        -0.1,
+        4
+      ],
+      "provenance": "surveyed",
+      "source": "dimensions.csv",
+      "seq": 0
+    },
+    {
+      "id": "face-north",
+      "name_en": "north elevation",
+      "phase": "faces",
+      "category": "massing",
+      "role": "Scaffold target face",
+      "geometry": {
+        "type": "box",
+        "w": 12,
+        "h": 6.5,
+        "d": 0.15
+      },
+      "position": [
+        6,
+        3.25,
+        8
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "provenance": "surveyed",
+      "source": "dimensions.csv",
+      "face_id": "north",
+      "bearing_deg": 0,
+      "width_m": 12,
+      "height_m": 6.5,
+      "seq": 1
+    },
+    {
+      "id": "opening-north-0",
+      "name_en": "door opening",
+      "phase": "faces",
+      "category": "opening",
+      "role": "Opening marker",
+      "geometry": {
+        "type": "box",
+        "w": 3,
+        "h": 2.4,
+        "d": 0.2
+      },
+      "position": [
+        6,
+        1.2,
+        8
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "provenance": "surveyed",
+      "source": "dimensions.csv",
+      "material": "marker",
+      "seq": 2
+    },
+    {
+      "id": "face-east",
+      "name_en": "east elevation",
+      "phase": "faces",
+      "category": "massing",
+      "role": "Scaffold target face",
+      "geometry": {
+        "type": "box",
+        "w": 8,
+        "h": 6.5,
+        "d": 0.15
+      },
+      "position": [
+        12,
+        3.25,
+        4
+      ],
+      "rotation_deg": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "provenance": "surveyed",
+      "source": "dimensions.csv",
+      "face_id": "east",
+      "bearing_deg": 90,
+      "width_m": 8,
+      "height_m": 6.5,
+      "seq": 3
+    },
+    {
+      "id": "face-south",
+      "name_en": "south elevation",
+      "phase": "faces",
+      "category": "massing",
+      "role": "Scaffold target face",
+      "geometry": {
+        "type": "box",
+        "w": 12,
+        "h": 6.5,
+        "d": 0.15
+      },
+      "position": [
+        6,
+        3.25,
+        0
+      ],
+      "rotation_deg": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "provenance": "assumed",
+      "source": "manual-entry",
+      "face_id": "south",
+      "bearing_deg": 180,
+      "width_m": 12,
+      "height_m": 6.5,
+      "seq": 4
+    },
+    {
+      "id": "face-west",
+      "name_en": "west elevation",
+      "phase": "faces",
+      "category": "massing",
+      "role": "Scaffold target face",
+      "geometry": {
+        "type": "box",
+        "w": 8,
+        "h": 6.5,
+        "d": 0.15
+      },
+      "position": [
+        0,
+        3.25,
+        4
+      ],
+      "rotation_deg": [
+        0,
+        4.71238898038469,
+        0
+      ],
+      "provenance": "surveyed",
+      "source": "dimensions.csv",
+      "face_id": "west",
+      "bearing_deg": 270,
+      "width_m": 8,
+      "height_m": 6.5,
+      "seq": 5
+    }
+  ]
+}

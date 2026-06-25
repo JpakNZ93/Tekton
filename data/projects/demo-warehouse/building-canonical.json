@@ -1,0 +1,90 @@
+{
+  "$schema_notes": {
+    "purpose": "Canonical building specification for Scaffold Quoter demo-warehouse project.",
+    "provenance_classes": {
+      "surveyed": "Measured on site or from trusted CAD/CSV",
+      "derived": "Computed from other surveyed values",
+      "assumed": "Estimator guess — must be visible in UI"
+    },
+    "units": { "length": "m" }
+  },
+  "meta": {
+    "project_id": "demo-warehouse",
+    "site_name": "Demo Warehouse",
+    "address": "123 Industrial Ave, Melbourne VIC",
+    "created_at": "2026-06-25T00:00:00Z"
+  },
+  "units": { "length": "m" },
+  "envelope": {
+    "footprint": {
+      "type": "polygon",
+      "points": [[0, 0], [12, 0], [12, 8], [0, 8]],
+      "provenance": "surveyed",
+      "source": "dimensions.csv",
+      "confidence": 1.0
+    },
+    "faces": [
+      {
+        "id": "north",
+        "bearing_deg": 0,
+        "width_m": 12.0,
+        "height_m": 6.5,
+        "setbacks": [],
+        "openings": [{ "type": "door", "x_m": 4.5, "y_m": 0, "w_m": 3.0, "h_m": 2.4 }],
+        "provenance": "surveyed",
+        "source": "dimensions.csv",
+        "confidence": 1.0
+      },
+      {
+        "id": "east",
+        "bearing_deg": 90,
+        "width_m": 8.0,
+        "height_m": 6.5,
+        "setbacks": [],
+        "openings": [],
+        "provenance": "surveyed",
+        "source": "dimensions.csv",
+        "confidence": 1.0
+      },
+      {
+        "id": "south",
+        "bearing_deg": 180,
+        "width_m": 12.0,
+        "height_m": 6.5,
+        "setbacks": [],
+        "openings": [],
+        "provenance": "assumed",
+        "source": "manual-entry",
+        "confidence": 0.5
+      },
+      {
+        "id": "west",
+        "bearing_deg": 270,
+        "width_m": 8.0,
+        "height_m": 6.5,
+        "setbacks": [],
+        "openings": [],
+        "provenance": "surveyed",
+        "source": "dimensions.csv",
+        "confidence": 1.0
+      }
+    ]
+  },
+  "constraints": {
+    "public_footpath_m": 1.2,
+    "no_scaffold_zones": [],
+    "access_notes": "Public footpath on north side — maintain 1.2 m clearance."
+  },
+  "inputs": [
+    {
+      "type": "csv",
+      "file": "dimensions.csv",
+      "extracted_fields": ["footprint", "north", "east", "west"]
+    },
+    {
+      "type": "manual",
+      "file": "manual-entry",
+      "extracted_fields": ["south.height_m"]
+    }
+  ]
+}

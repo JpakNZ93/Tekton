@@ -18,7 +18,10 @@
     "demo:corrupt": "node scripts/demo.mjs corrupt",
     "demo:restore": "node scripts/demo.mjs restore",
     "dev": "next dev",
-    "build": "node scripts/derive.mjs --building notre-dame && node scripts/verify.mjs --building notre-dame && next build",
+    "project:derive": "node scripts/orchestrate-project.mjs",
+    "project:test": "node --test scripts/project-test.mjs",
+    "build:quoter": "node scripts/orchestrate-project.mjs demo-warehouse",
+    "build": "node scripts/derive.mjs --building notre-dame && node scripts/verify.mjs --building notre-dame && node scripts/orchestrate-project.mjs demo-warehouse && next build",
     "start": "next start"
   },
   "dependencies": {
